@@ -11,48 +11,50 @@ import {
 
 export default function SystemCard() {
   return (
-    <div className="bg-primary border border-white/10 rounded-t-xl p-7 w-full  text-white ">
-      <p className="text-lg font-semibold text-white/90">Hey David!</p>
-      <p className="text-white/70 text-sm mb-6">
+    <div className="bg-primary border border-white/10 rounded-t-xl p-4 pb-0 w-full  text-white ">
+      <p className="text-12 font-semibold text-white/90">Hey David!</p>
+      <p className="text-white/70 text-[10px] mb-2">
         Here is your Custom project & schedule
       </p>
 
-      <div className="bg-[#111] rounded-xl p-4 border border-white/10 mb-4">
-        <div className="flex items-center gap-2 text-sm text-white/80 mb-4">
-          <SlidersHorizontal size={16} />
-          <p>On going project:</p>
+      <div className="bg-bg-secondary  rounded-t-xl p-4 border border-white/10 ">
+        <div className="flex items-center gap-2 text-sm text-white mb-4">
+          <SlidersHorizontal size={12} />
+          <p className="text-12">On going project:</p>
         </div>
-        <div className="flex items-center justify-between bg-black/30 border border-white/10 rounded-lg p-3">
-          <div className="flex items-center gap-3">
-            <div className="bg-white/10 p-2 rounded-md">
-              <Bot size={16} />
-            </div>
-            <div>
-              <p className="text-white text-sm font-medium">
-                Social Intelligence Bot
-              </p>
-              <span className="text-xs text-white/60">90% Finished</span>
+        <div className="flex flex-col gap-3">
+          <div className=" p-1 bg-bg-primary border border-white/10 rounded-sm ">
+            <div className="flex items-center gap-2">
+              <div className="bg-white/10 p-2 rounded-sm">
+                <Bot size={16} />
+              </div>
+              <div>
+                <p className="text-white text-12 font-medium">
+                  Social Intelligence Bot
+                </p>
+                <span className="text-xs text-white/60">90% Finished</span>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="bg-[#111] rounded-xl p-4 border border-white/10">
-        <div className="flex items-center gap-2 text-sm text-white/80 mb-3">
-          <Calendar size={16} />
-          <p>Schedule</p>
-        </div>
-        <div className="flex gap-2 mb-4">
-          {['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'].map((d, i) => (
-            <span
-              key={i}
-              className={`text-xs w-8 h-8 flex items-center justify-center rounded-md border border-white/10 ${
-                i === 0 ? 'bg-blue-500/20 border-blue-500/50 text-blue-400' : ''
-              }`}
-            >
-              {d}
-            </span>
-          ))}
+          <div className="  gradient-border h-px"></div>
+          <div className="p-1 flex flex-col gap-1 bg-bg-primary border border-white/10 rounded-sm ">
+            <div className="flex items-center gap-2 text-sm text-white/80 ">
+              <Calendar size={12} />
+              <p className="text-12">Schedule</p>
+            </div>
+            <div className="flex gap-2 ">
+              {['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'].map((d, i) => (
+                <span
+                  key={i}
+                  className={`text-[10px] w-5 h-5 flex items-center justify-center  ${
+                    i === 0 ? 'bg-blue-500/20 border-blue-500/50 ' : ''
+                  }`}
+                >
+                  {d}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
         <div className="space-y-1 text-sm text-white/70">
           <div className="flex justify-between items-center p-2 rounded-md hover:bg-white/5">
