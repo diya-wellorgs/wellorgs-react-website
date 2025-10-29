@@ -1,4 +1,8 @@
 import GradientText from '../GradientText';
+import AssistantCard from './cards/AssistantCard';
+import ContractCard from './cards/ContractCard';
+import SalesCard from './cards/SalesCard';
+import SystemCard from './cards/SystemCard';
 import ServiceCard from './ServiceCard';
 
 export default function ServicesSection() {
@@ -9,7 +13,7 @@ export default function ServicesSection() {
       description:
         'We craft end-to-end platforms – AI SaaS dashboards, AI-Feedback systems, Intelligent softwares, and Education systems, so you can launch confidently and grow without limits.',
       tags: ['Contract Signed', 'Development', 'Deployment'],
-
+      cardComponent: <ContractCard />,
       reverse: false,
     },
     {
@@ -18,7 +22,7 @@ export default function ServicesSection() {
       description:
         'From managing calendars to drafting emails and summarizing meetings, we can build AI assistants that work around the clock to keep your business running smarter and faster.',
       tags: ['Chatbots', 'Persona Bots', 'Many more'],
-
+      cardComponent: <AssistantCard />,
       reverse: true,
     },
     {
@@ -27,7 +31,7 @@ export default function ServicesSection() {
       description:
         'AI tools for personalized outreach and automated content creation that scale your sales efforts and build a stronger brand presence.',
       tags: ['Auto-Emailer', 'Content', 'Smart Auto-reply'],
-
+      cardComponent: <SalesCard />,
       reverse: false,
     },
     {
@@ -36,7 +40,7 @@ export default function ServicesSection() {
       description:
         "Whether you're starting from scratch or enhancing an existing system, we offer strategic consulting and develop custom AI projects aligned with your unique goals.",
       tags: ['Custom AI', 'System Design', 'Consulting'],
-
+      cardComponent: <SystemCard />,
       reverse: true,
     },
   ];
@@ -55,7 +59,7 @@ export default function ServicesSection() {
       </div>
 
       {/* Services Cards */}
-      <div className="flex flex-col gap-24">
+      <div className="flex flex-col gap-24 max-w-5xl w-full mx-auto">
         {services.map((service, index) => (
           <ServiceCard
             key={index}

@@ -5,18 +5,19 @@ export default function ServiceCard({
   title,
   description,
   tags = [],
-
+  cardComponent,
   reverse,
 }) {
   return (
     <section
       className={`flex flex-col md:flex-row ${
         reverse ? 'md:flex-row-reverse' : ''
-      } items-center justify-between gap-10 py-20`}
+      } items-center justify-between  `}
     >
-      {/* Image */}
-      <div className="w-full md:w-1/2 flex justify-center">
-        <div className="bg-[#0c0c0c] rounded-2xl p-6 shadow-lg border border-white/5"></div>
+      <div className="max-w-[430px] w-full   ">
+        <div className="bg-[#0c0c0c]  pb-0 p-[50px] rounded-2xl  shadow-lg border border-white/5">
+          {cardComponent}
+        </div>
       </div>
 
       {/* Content */}
