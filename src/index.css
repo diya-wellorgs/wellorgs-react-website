@@ -1,19 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 
-
-
 @theme {
-
     --color-primary: black;
     --color-secondary: white;
     --color-tertiary: #003060;
-    --default-font-family: Figtree;
+    --color-bg-primary: #191919;
+    --color-bg-secondary: #0d0d0d;
 
+    --color-border: #222222;
+    --default-font-family: Figtree;
+    --text-12: 12px;
 }
 
 .bg-gradient {
     background: radial-gradient(50% 50% at 50% 50%, var(--color-tertiary) 0%, rgb(0, 0, 0) 100%);
+}
+
+.bg-gradient-secondary {
+    background: linear-gradient(141deg, rgb(81, 111, 245) 13%, rgba(201, 110, 240, 0) 35.0235827429153%, rgba(164, 92, 219, 0) 64.17244225559735%, rgb(0, 48, 96) 88%)
+}
+
+.bg-gradient-tertiary {
+    background: linear-gradient(141deg, rgb(0, 48, 96), rgb(0, 48, 96) 13%, rgba(201, 110, 240, 0) 35.0235827429153%, rgba(164, 92, 219, 0) 64.17244225559735%, rgb(0, 48, 96), rgb(0, 48, 96) 88%);
 }
 
 .text-gradient {
@@ -23,4 +32,24 @@
 body {
     background: var(--color-primary);
     color: var(--color-secondary)
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-reverse {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
 }
