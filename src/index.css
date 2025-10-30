@@ -17,6 +17,18 @@
     background: radial-gradient(50% 50% at 50% 50%, var(--color-tertiary) 0%, rgb(0, 0, 0) 100%);
 }
 
+.banner-bg-gradient {
+    background: linear-gradient(149deg, rgba(26, 53, 232, .4) 0%, var(--token-b2fb23d9-6070-4f2d-b3d0-2fe68c4f2aab, rgba(13, 13, 13, .8)) 28.999999999999996%, var(--token-b2fb23d9-6070-4f2d-b3d0-2fe68c4f2aab, rgba(13, 13, 13, .8)) 74%, rgba(26, 53, 232, .4) 100%);
+}
+
+.bg-gradient-primary {
+    background: radial-gradient(50% 50% at 50% 100%, rgba(0, 48, 96, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bg-gradient-primary-2 {
+    background: radial-gradient(50% 75% at 98.9% 100%, rgba(0, 48, 96, 0.3) 0%, rgba(13, 13, 13, 0.8)100%);
+}
+
 .bg-gradient-secondary {
     background: linear-gradient(141deg, rgb(81, 111, 245) 13%, rgba(201, 110, 240, 0) 35.0235827429153%, rgba(164, 92, 219, 0) 64.17244225559735%, rgb(0, 48, 96) 88%)
 }
