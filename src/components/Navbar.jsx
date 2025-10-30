@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import logo from '../assets/logo.avif';
-import Button from './Button';
+import Button from './ui/Button';
 
 const navLinks = [
   { to: '/', label: 'Home' },
