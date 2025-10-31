@@ -1,9 +1,12 @@
+import { Spline } from 'lucide-react';
+
 import BenefitsSection from '../components/BenefitsSection';
 import CallBanner from '../components/CallBanner';
 import FaqSection from '../components/faq/FaqSection';
 import Footer from '../components/footer/Footer';
 import GradientText from '../components/GradientText';
-import Hero from '../components/Hero';
+import { SplineSceneBasic } from '../components/hero/Demo';
+import Hero from '../components/hero/Hero';
 import ProcessSection from '../components/process/ProcessSection';
 import ServicesSection from '../components/services/ServicesSection';
 import StatisticsSection from '../components/StatisticsSection';
@@ -13,8 +16,8 @@ import WorkflowIntegrations from '../components/workflow/WorkflowIntegrations';
 
 function Home() {
   return (
-    <div>
-      <Hero />
+    <div className="pt-40">
+      <SplineSceneBasic />
       <TrustedBrands />
       <StatisticsSection />
       <ServicesSection />

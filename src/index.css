@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
 @import "tailwindcss";
 
 @theme {
@@ -12,6 +14,32 @@
     --default-font-family: Figtree;
     --text-12: 12px;
 }
+
+.font-inter {
+    font-family: Inter;
+}
+
+.fonst-instrument {
+    font-family: Instrument Sans;
+}
+
+/* @keyframes spotlight {
+
+    0%,
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.05);
+    }
+}
+
+.animate-spotlight {
+    animation: spotlight 6s ease-in-out infinite;
+} */
 
 .bg-gradient {
     background: radial-gradient(50% 50% at 50% 50%, var(--color-tertiary) 0%, rgb(0, 0, 0) 100%);
