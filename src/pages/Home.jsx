@@ -1,12 +1,15 @@
 import BenefitsSection from '../components/BenefitsSection';
 import CallBanner from '../components/CallBanner';
 import FaqSection from '../components/faq/FaqSection';
+import Footer from '../components/footer/Footer';
 import GradientText from '../components/GradientText';
 import Hero from '../components/Hero';
+import ProcessSection from '../components/process/ProcessSection';
 import ServicesSection from '../components/services/ServicesSection';
 import StatisticsSection from '../components/StatisticsSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import TrustedBrands from '../components/TrustedBrands';
+import WorkflowIntegrations from '../components/workflow/WorkflowIntegrations';
 
 function Home() {
   return (
@@ -15,11 +18,14 @@ function Home() {
       <TrustedBrands />
       <StatisticsSection />
       <ServicesSection />
+      <WorkflowIntegrations />
+      <ProcessSection />
       <BenefitsSection />
       <TestimonialsSection />
       <div className="min-h-screen bg-black text-white">
         <FaqSection />
         <CallBanner />
+        <Footer />
       </div>
     </div>
   );
