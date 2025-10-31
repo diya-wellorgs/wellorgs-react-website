@@ -4,14 +4,13 @@ import BenefitsSection from '../components/BenefitsSection';
 import CallBanner from '../components/CallBanner';
 import FaqSection from '../components/faq/FaqSection';
 import Footer from '../components/footer/Footer';
-import GradientText from '../components/GradientText';
-import { SplineSceneBasic } from '../components/hero/Demo';
-import Hero from '../components/hero/Hero';
+import { SplineSceneBasic } from '../components/hero/Hero';
 import ProcessSection from '../components/process/ProcessSection';
 import ServicesSection from '../components/services/ServicesSection';
 import StatisticsSection from '../components/StatisticsSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import TrustedBrands from '../components/TrustedBrands';
+import GradientText from '../components/ui/GradientText';
 import WorkflowIntegrations from '../components/workflow/WorkflowIntegrations';
 
 function Home() {
