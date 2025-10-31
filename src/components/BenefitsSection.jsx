@@ -15,6 +15,9 @@ import { FaChartPie } from 'react-icons/fa';
 import { IoTime } from 'react-icons/io5';
 import { PiHandshakeFill } from 'react-icons/pi';
 
+import Chip from './ui/Chip';
+import GradientText from './ui/GradientText';
+
 const benefitsData = [
   {
     icon: <BsFillLightningChargeFill className="w-6 h-6 text-white" />,
@@ -57,18 +60,16 @@ const benefitsData = [
 export default function BenefitsSection() {
   return (
     <section className="bg-black text-white py-20">
-      <div className="max-w-6xl mx-auto text-center px-6">
-        {/* Gradient Heading */}
-        <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gradient text-transparent bg-clip-text leading-tight">
-          The Key Benefits of AI for Your Business Growth
-        </h2>
-
-        {/* Subtitle */}
-        <p className="text-gray-300 max-w-2xl mx-auto mb-16 text-lg">
-          Discover how AI automation enhances efficiency, reduces costs, and
-          drives business growth with smarter, faster processes.
-        </p>
-
+      <div className="max-w-6xl w-full flex flex-col items-center justify-center gap-15 px-6 text-center mx-auto ">
+        <div className="w-full flex flex-col items-center justify-center gap-7">
+          <Chip text=" Benefits" />
+          {/* Gradient Heading & subheading*/}
+          <GradientText
+            title="The Key Benefits of AI for Your Business Growth"
+            subheading="Discover how AI automation enhances efficiency, reduces costs, and
+          drives business growth with smarter, faster processes."
+          />
+        </div>
         {/* Benefit Cards */}
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
           {benefitsData.map((benefit, index) => (

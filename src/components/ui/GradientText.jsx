@@ -1,11 +1,12 @@
-import React from 'react';
-
-const GradientText = ({ text }) => {
+export default function GradientText({ title, subheading }) {
   return (
-    <h2 className="text-6xl  font-bold text-center text-transparent bg-clip-text text-gradient">
-      {text}
-    </h2>
+    <div>
+      <h2 className="text-[38px] md:text-[74px] font-instrument font-semibold leading-[1.1em] text-center text-gradient text-transparent pb-3 bg-clip-text">
+        {title}
+      </h2>
+      <p className="text-[18px] max-w-[600px] mx-auto text-center font-medium leading-[1.5em] tracking-[-0.02em] text-[#cccccc]">
+        {subheading}
+      </p>
+    </div>
   );
-};
-
-export default GradientText;
+}

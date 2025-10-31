@@ -1,4 +1,5 @@
-import GradientText from '../GradientText';
+import Chip from '../ui/Chip';
+import GradientText from '../ui/GradientText';
 import AssistantCard from './cards/AssistantCard';
 import ContractCard from './cards/ContractCard';
 import SalesCard from './cards/SalesCard';
@@ -48,14 +49,12 @@ export default function ServicesSection() {
   return (
     <div className="bg-black text-white px-6 md:px-16 lg:px-28 py-28">
       <div className="text-center mb-24">
-        <button className="text-sm bg-[#111] text-white/80 border border-white/10 px-4 py-1 rounded-md mb-6">
-          Our Services
-        </button>
-        <GradientText text="AI Solutions That Take Your Business to the Next Level" />
-        <p className="mt-4 text-white/60 text-lg">
-          We design, develop, and implement automation tools that help you work
-          smarter, not harder.
-        </p>
+        <Chip />
+        <GradientText
+          title="AI Solutions That Take Your Business to the Next  Level"
+          subheading=" We design, develop, and implement automation tools that help you work
+          smarter, not harder."
+        />
       </div>
 
       {/* Services Cards */}

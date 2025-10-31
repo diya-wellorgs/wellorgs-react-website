@@ -1,5 +1,8 @@
 import { Star } from 'lucide-react';
 
+import Chip from './ui/Chip';
+import GradientText from './ui/GradientText';
+
 const testimonials = [
   {
     name: 'James Carter',
@@ -34,23 +37,16 @@ const testimonials = [
 export default function TestimonialsSection() {
   return (
     <section className="bg-black text-white py-20">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+      <div className=" w-full flex flex-col items-center justify-center gap-15 px-6 text-center mx-auto">
         {/* Section Badge */}
-        <div className="inline-block mb-4">
-          <span className="bg-neutral-900 border border-neutral-800 text-sm px-4 py-1 rounded-full">
-            Testimonials
-          </span>
+        <div className="w-full flex flex-col items-center justify-center gap-7">
+          <Chip text=" Testimonials" />
+          {/* Gradient Heading & subheading*/}
+          <GradientText
+            title="Why Businesses Love Our AI Solutions"
+            subheading="Real businesses, real results with AI automation."
+          />
         </div>
-
-        {/* Gradient Heading */}
-        <h2 className="text-5xl md:text-6xl font-bold mb-4 text-gradient  text-transparent bg-clip-text leading-tight">
-          Why Businesses Love Our AI Solutions
-        </h2>
-
-        {/* Subtitle */}
-        <p className="text-gray-300 text-lg mb-16">
-          Real businesses, real results with AI automation.
-        </p>
 
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-2 grid-cols-1 gap-6 max-w-[900px] mx-auto">

@@ -1,4 +1,5 @@
 import { BlueWave } from '../../icons';
+import Chip from '../ui/Chip';
 import GradientText from '../ui/GradientText';
 import FaqItem from './FaqItem';
 
@@ -33,27 +34,27 @@ const faqData = [
 const FaqSection = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center bg-black px-6 py-20 text-white">
-      <div className="text-center mb-8">
-        <span className="px-3 py-1 text-sm font-medium bg-neutral-900 rounded-md border border-neutral-700">
-          FAQs
-        </span>
-        <div className="mt-4">
-          <GradientText text="We’ve Got the Answers You’re Looking For" />
+      <div className=" w-full flex flex-col items-center justify-center gap-15 px-6 text-center mx-auto">
+        {/* Section Badge */}
+        <div className="w-full flex flex-col items-center justify-center gap-7">
+          <Chip text=" FAQs" />
+          {/* Gradient Heading & subheading*/}
+          <GradientText
+            title="We’ve Got the Answers You’re Looking For"
+            subheading="Quick answers to your AI automation questions."
+          />
         </div>
-        <p className="text-gray-400 mt-3 text-base">
-          Quick answers to your AI automation questions.
-        </p>
-      </div>
 
-      <div className="relative max-w-3xl w-full">
-        <BlueWave className="w-full h-auto absolute bottom-0 left-0 blur-[50px] opacity-30 z-10" />
-        <div className="flex flex-col gap-4 z-20 relative">
-          {faqData.map((faq, idx) => (
-            <FaqItem
-              key={idx}
-              {...faq}
-            />
-          ))}
+        <div className="relative max-w-3xl w-full">
+          <BlueWave className="w-full h-auto absolute bottom-0 left-0 blur-[50px] opacity-30 z-10" />
+          <div className="flex flex-col gap-4 z-20 relative">
+            {faqData.map((faq, idx) => (
+              <FaqItem
+                key={idx}
+                {...faq}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
