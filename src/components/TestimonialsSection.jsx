@@ -64,13 +64,13 @@ export default function TestimonialsSection() {
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className="w-5 h-5 text-white fill-white"
+                    className="w-4 h-4 text-white fill-white"
                   />
                 ))}
               </div>
 
               {/* Feedback */}
-              <p className="text-gray-300 mb-6 leading-relaxed">
+              <p className="text-gray-300 mb-4 tracking-[-0.02em] leading-[1.4em]">
                 "{t.feedback}"
               </p>
 
@@ -83,7 +83,7 @@ export default function TestimonialsSection() {
                 />
                 <div>
                   <h4 className="font-semibold text-white">{t.name}</h4>
-                  <p className="text-sm text-gray-400">{t.title}</p>
+                  <p className="text-12 text-gray-400">{t.title}</p>
                 </div>
               </div>
             </div>
