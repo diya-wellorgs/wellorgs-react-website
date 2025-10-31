@@ -6,7 +6,7 @@ import RotatingOrb from '../../ui/RotatingOrb';
 
 export default function Integrate() {
   return (
-    <div className="relative flex items-center justify-center  rounded-md border border-neutral-800 px-8 py-6 w-full max-w-md mx-auto">
+    <div className="relative flex items-center justify-center h-[180px]  rounded-md border border-neutral-800 px-8 py-6 w-full max-w-md mx-auto">
       {/* Connection Lines */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[55%] h-[1px] bg-neutral-700"></div>
 

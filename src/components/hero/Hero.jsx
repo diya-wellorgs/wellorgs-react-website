@@ -3,7 +3,10 @@
 import { useEffect, useMemo, useRef } from 'react';
 
 import { debounce } from '../../lib/utils';
+import Button from '../ui/Button';
+import Chip from '../ui/Chip';
 import { Card } from './Card';
+import ParticleBackground from './ParticleBackground';
 import { SplineScene } from './Splite';
 import { Spotlight } from './Spotlight';
 
@@ -66,17 +69,25 @@ export function SplineSceneBasic() {
       onMouseEnter={() => mouseStateHandler('mouseenter')}
       className="w-full h-[500px] bg-black/[0.96] relative overflow-hidden contain-paint"
     >
+      <ParticleBackground />
       <Spotlight ref={spotlightRef} />
 
       <div className="flex h-full">
         {/* Left content */}
-        <div className="flex-1 ml-20 p-8 relative z-10 flex flex-col  justify-center">
-          <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+        <div className="flex  relative z-10 pl-40 max-w-3xl  flex-col items-center  justify-center">
+          <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 pl-25">
             Intelligent Automation for Modern Businesses.
           </h1>
-          <p className="mt-4 text-neutral-300 max-w-lg">
+          <p className="mt-4 text-neutral-300 pl-18">
             Wellorgs brings AI automation to your fingertips & streamline tasks.
           </p>
+          <div className="flex gap-3 items-center justify-center pt-4 pl-15">
+            <Button
+              text="Get in touch"
+              className="py-1"
+            />
+            <Chip text="View services" />
+          </div>
         </div>
 
         {/* Right content */}

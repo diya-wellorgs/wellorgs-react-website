@@ -23,7 +23,7 @@ import {
  */
 export function Develop() {
   return (
-    <div className="w-full max-w-2xl mx-auto bg-[#ffffff0d] border border-neutral-800 shadow-2xl overflow-hidden">
+    <div className="w-full max-w-2xl h-[180px] mx-auto bg-[#ffffff0d] border border-neutral-800 shadow-2xl overflow-hidden">
       {/* --- Title Bar --- */}
       <div className="flex justify-between w-full items-center py-1 px-4 ">
         <div className="flex items-center ">
@@ -31,10 +31,6 @@ export function Develop() {
           <ForwardArrowIcon className=" text-zinc-500" />
         </div>
 
-        {/* <div className="flex items-center h-4 bg-red-400  rounded-md">
-          {' '}
-          hello
-        </div> */}
         <div className="flex items-center justify-end gap-2">
           <MiniMizeicon className=" text-zinc-500" />
           <MinimizeTabIcon className=" text-zinc-500" />
@@ -44,7 +40,7 @@ export function Develop() {
       {/* --- Main Content Area --- */}
       <div className="flex">
         {/* --- Sidebar --- */}
-        <div className="flex flex-col items-center w-10 pt-5 gap-3  ">
+        <div className="flex flex-col items-center w-10 pt-5   ">
           <FileIcon className=" text-white" />
           <SearchIcon className=" text-zinc-500 hover:text-white transition-colors" />
           <PuzzleIcon className=" text-zinc-500 hover:text-white transition-colors" />
@@ -52,7 +48,7 @@ export function Develop() {
 
         {/* --- Code Editor --- */}
         <div className="flex-1 p-6 bg-black h-fit">
-          <pre className="font-mono text-sm text-gray-300">
+          <pre className="font-mono text-12 text-gray-300">
             <code>
               <div>
                 <span className="text-yellow-400">class</span>{' '}

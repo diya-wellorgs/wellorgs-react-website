@@ -19,7 +19,7 @@ export default function Analyze() {
 
   return (
     <div className="flex  gap-2 ">
-      <div className="flex flex-col  w-full h-fit border border-neutral-800 rounded-sm px-[5px] py-3 gap-3 items-center ">
+      <div className="flex-1 flex flex-col justify-center w-full h-[180px] border border-neutral-800 rounded-sm px-[5px] py-3 gap-3 items-center ">
         {/* Radar Animation */}
         <div className="relative w-30 h-30  rounded-full border border-neutral-800 flex items-center justify-center overflow-hidden ">
           {/* Concentric Circles */}
@@ -47,19 +47,19 @@ export default function Analyze() {
 
         {/* Footer Text */}
         <div>
-          <p className="text-center  text-sm">Analyzing current workflow..</p>
+          <p className="text-center  text-12">Analyzing current workflow..</p>
         </div>
       </div>
 
       {/* Status Checks */}
-      <div className="flex flex-col gap-1 w-full h-fit border border-neutral-800 rounded-sm px-[5px] py-2.5 ">
+      <div className="flex-1 flex flex-col gap-1 w-full h-[180px] border border-neutral-800 rounded-sm px-[5px] py-2 ">
         {checks.map(({ icon: Icon, label }, index) => (
           <div
             key={index}
             className="flex items-start gap-3 border border-neutral-800 rounded-sm px-2 py-1 bg-[#0a0a0a] hover:bg-[#111] transition-all"
           >
             <Icon className="w-4 h-4 text-gray-300" />
-            <span className="text-sm text-gray-200">{label}</span>
+            <span className="text-12 text-gray-200">{label}</span>
           </div>
         ))}
       </div>

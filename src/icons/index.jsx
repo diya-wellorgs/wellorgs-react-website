@@ -129,8 +129,8 @@ export const BackArrowIcon = (props) => (
     color="var(--token-2cf088f3-ce85-4dcc-af29-885125de2d17, rgba(255, 255, 255, 0.75))"
     style={{
       userSelect: 'none',
-      width: '10%',
-      height: '10%',
+      width: '6%',
+      height: '6%',
       display: 'inline-block',
       fill: 'var(--token-2cf088f3-ce85-4dcc-af29-885125de2d17, rgba(255, 255, 255, 0.75))',
       color:
@@ -150,8 +150,8 @@ export const ForwardArrowIcon = (props) => (
     color="var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75))"
     style={{
       userSelect: 'none',
-      width: '10%',
-      height: '10%',
+      width: '6%',
+      height: '6%',
       display: 'inline-block',
       fill: 'var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75))',
       color:
@@ -171,8 +171,8 @@ export const MinimizeTabIcon = (props) => (
     color="var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75))"
     style={{
       userSelect: 'none',
-      width: '10%',
-      height: '10%',
+      width: '5%',
+      height: '5%',
       display: 'inline-block',
       fill: 'var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75))',
       color:
@@ -192,8 +192,8 @@ export const MiniMizeicon = (props) => (
     color="var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75))"
     style={{
       userSelect: 'none',
-      width: '10%',
-      height: '10%',
+      width: '7%',
+      height: '7%',
       display: 'inline-block',
       fill: 'var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75))',
       color:

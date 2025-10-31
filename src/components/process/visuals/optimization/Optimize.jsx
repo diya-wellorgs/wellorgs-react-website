@@ -23,7 +23,7 @@ export default function Optimize() {
   ];
 
   return (
-    <section className=" px-3 py-3  border border-[#2a2a2a]  max-w-md">
+    <section className=" px-3 py-3 h-[180px] space-y-2 border border-[#2a2a2a]  max-w-md">
       {systems.map((system, index) => (
         <SystemStatusCard
           key={index}
