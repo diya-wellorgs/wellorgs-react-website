@@ -19,7 +19,7 @@ const CallBanner = () => {
           </p>
 
           <Button
-            text="Book border a free Call"
+            text="Book  a free Call"
             className={'px-3 py-1.5'}
           />
         </div>
