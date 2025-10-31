@@ -21,6 +21,16 @@
     background: linear-gradient(149deg, rgba(26, 53, 232, .4) 0%, var(--token-b2fb23d9-6070-4f2d-b3d0-2fe68c4f2aab, rgba(13, 13, 13, .8)) 28.999999999999996%, var(--token-b2fb23d9-6070-4f2d-b3d0-2fe68c4f2aab, rgba(13, 13, 13, .8)) 74%, rgba(26, 53, 232, .4) 100%);
 }
 
+.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0.706592px 0.706592px -0.625px, rgba(0, 0, 0, 0.14) 0px 1.80656px 1.80656px -1.25px, rgba(0, 0, 0, 0.14) 0px 3.62176px 3.62176px -1.875px, rgba(0, 0, 0, 0.13) 0px 6.8656px 6.8656px -2.5px, rgba(0, 0, 0, 0.1) 0px 13.6468px 13.6468px -3.125px, rgba(0, 0, 0, 0.05) 0px 30px 30px -3.75px;
+    ;
+}
+
+.footer-bg-gradient {
+    background: radial-gradient(50% 50% at 50% 3.4%, rgba(54, 124, 255, 0.3) 0%, rgba(171, 171, 171, 0) 100%);
+    ;
+}
+
 .bg-gradient-primary {
     background: radial-gradient(50% 50% at 50% 100%, rgba(0, 48, 96, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
 }
