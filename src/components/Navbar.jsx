@@ -13,15 +13,15 @@ const navLinks = [
 const Navbar = () => {
   return (
     <>
-      <nav className="w-full fixed top-0 z-50 bg-primary flex justify-center border-b border-[#222222] px-10 py-3">
+      <nav className="w-full fixed top-0 z-50 bg-primary flex justify-center border-[#222222] px-10 py-3">
         <div className="flex items-center justify-between w-full max-w-7xl">
           <div className="flex gap-1 items-center justify-center">
             <img
               src={logo}
               alt="logo"
-              className="h-11 w-11"
+              className="h-10 w-11"
             />
-            <h1 className="text-[21px] font-bold">Wellorgs AI</h1>
+            <h1 className="text-[25px] font-bold">Wellorgs AI</h1>
           </div>
           <div className="flex items-center gap-4">
             <ul className="flex items-center ">
