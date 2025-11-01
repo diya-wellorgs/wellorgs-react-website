@@ -1,32 +1,24 @@
 import { motion } from 'motion/react';
+import { li } from 'motion/react-client';
 
-import logo12 from '../assets/Emerkit.png';
-// import brandLogo1 from '../assets/brand-logo1.png';
-// import brandLogo2 from '../assets/brand-logo2.avif';
-// import brandLogo3 from '../assets/brand-logo3.png';
-// import brandLogo4 from '../assets/brand-logo4.avif';
-// import brandLogo5 from '../assets/brand-logo5.png';
-// import brandLogo6 from '../assets/brand-logo6.avif';
-// import brandLogo7 from '../assets/brand-logo7.png';
-// import brandLogo8 from '../assets/brand-logo8.png';
-import logo1 from '../assets/logo1.png';
-import logo2 from '../assets/logo2.png';
-// import logo3 from '../assets/logo3.png';
-import logo3 from '../assets/logo4.png';
-import logo4 from '../assets/logo5.png';
-// import logo6 from '../assets/logo6.png';
-// import logo7 from '../assets/logo7.png';
-// import logo8 from '../assets/logo8.png';
-import logo5 from '../assets/logo9.png';
-import logo6 from '../assets/logo10.png';
-import logo7 from '../assets/logo11.png';
-import logo8 from '../assets/logo12.png';
-import logo9 from '../assets/logo13.png';
-import logo10 from '../assets/logo14.png';
-import logo11 from '../assets/logo15.png';
-import logo13 from '../assets/raya.png';
-import logo14 from '../assets/Studybot.png';
+import bold from '../assets/bold.png';
+import doorloop from '../assets/doorloop.png';
+import Emerkit from '../assets/Emerkit.png';
+import employoAi from '../assets/employoAi.png';
+import linkedIn from '../assets/linkedIn.png';
+import llu from '../assets/llu.png';
+import medhoco from '../assets/medhoco.png';
+import movingMiles from '../assets/movingMiles.png';
+import neyuAI from '../assets/neyuAI.png';
+import omg from '../assets/omg.png';
+import punjabGovtLogo from '../assets/punjabGov.png';
+import raya from '../assets/raya.png';
+import shadicom from '../assets/shadicom.png';
+import studybot from '../assets/studybot.png';
+import synthesia from '../assets/synthesia.png';
+import toyHotel from '../assets/toyHotel.png';
 import BrandLogo from './BrandLogo';
+import ParticleBackground from './hero/ParticleBackground';
 
 const brands = [
   // { id: 1, logo: brandLogo1, alt: 'Semaphore' },
@@ -42,57 +34,55 @@ const brands = [
   //   alt: 'Wellorgs',
   //   className: 'invert',
   // },
-  { id: 1, logo: logo1 },
-  { id: 2, logo: logo2 },
-  // { id: 3, logo: logo3 },
-  { id: 3, logo: logo3 },
-  { id: 4, logo: logo4 },
-  // { id: 6, logo: logo6 },
-  // { id: 7, logo: logo7 },
-  // { id: 8, logo: logo8 },
-  { id: 5, logo: logo5 },
-  { id: 6, logo: logo6 },
-  { id: 7, logo: logo7 },
-  // { id: 8, logo: logo8 },
-  { id: 9, logo: logo9 },
-  { id: 10, logo: logo10 },
-  { id: 11, logo: logo11 },
-  { id: 12, logo: logo12 },
-  { id: 13, logo: logo13 },
-  { id: 14, logo: logo14 },
-  { id: 1, logo: logo1 },
-  { id: 2, logo: logo2 },
-  // { id: 3, logo: logo3 },
-  { id: 3, logo: logo3 },
-  { id: 4, logo: logo4 },
-  // { id: 6, logo: logo6 },
-  // { id: 7, logo: logo7 },
-  // { id: 8, logo: logo8 },
-  { id: 5, logo: logo5 },
-  { id: 6, logo: logo6 },
-  { id: 7, logo: logo7 },
-  // { id: 8, logo: logo8 },
-  { id: 9, logo: logo9 },
-  { id: 10, logo: logo10 },
-  { id: 11, logo: logo11 },
-  { id: 12, logo: logo12 },
-  { id: 13, logo: logo13 },
-  { id: 14, logo: logo14 },
+  { id: 1, logo: raya },
+  { id: 2, logo: movingMiles },
+  { id: 3, logo: employoAi },
+  { id: 4, logo: punjabGovtLogo },
+  { id: 5, logo: bold },
+  { id: 6, logo: shadicom },
+  { id: 7, logo: synthesia },
+  { id: 8, logo: doorloop },
+  { id: 9, logo: neyuAI },
+  { id: 10, logo: studybot },
+  { id: 11, logo: linkedIn },
+  { id: 12, logo: medhoco },
+  { id: 13, logo: toyHotel },
+  { id: 14, logo: omg },
+  { id: 15, logo: Emerkit },
+  { id: 16, logo: llu },
+
+  { id: 1, logo: raya },
+  { id: 2, logo: movingMiles },
+  { id: 3, logo: employoAi },
+  { id: 4, logo: punjabGovtLogo },
+  { id: 5, logo: bold },
+  { id: 6, logo: shadicom },
+  { id: 7, logo: synthesia },
+  { id: 8, logo: doorloop },
+  { id: 9, logo: neyuAI },
+  { id: 10, logo: studybot },
+  { id: 11, logo: linkedIn },
+  { id: 12, logo: medhoco },
+  { id: 13, logo: toyHotel },
+  { id: 14, logo: omg },
+  { id: 15, logo: Emerkit },
+  { id: 16, logo: llu },
 ];
 
 export default function TrustedBrands() {
   return (
     <section className="relative flex flex-col items-center text-center overflow-hidden bg-primary text-secondary py-20">
       {/* Heading */}
+
       <h3 className="text-sm text-gray-300 z-10 ">
         Over <span className="font-semibold">150+</span> business trust us
       </h3>
 
       {/* Logos Slider */}
-      <div className="relative w-full pt-8  max-w-3xl overflow-hidden z-10">
+      <div className="relative w-full pt-8  max-w-4xl overflow-hidden z-10">
         <motion.div
-          className="flex gap-18 w-fit items-center px-12"
-          animate={{ x: '-155%' }}
+          className="flex gap-14 w-fit items-center px-[170px]"
+          animate={{ x: '-190%' }}
           transition={{
             repeat: Infinity,
             duration: 20,
