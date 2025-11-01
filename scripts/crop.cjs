@@ -7,8 +7,8 @@ const path = require('path');
 const baseDir = __dirname;
 
 // Set the names for your input and output folders
-const inputDir = path.join(baseDir, 'src', 'assets');
-const outputDir = path.join(baseDir, 'cropped'); // User asked for 'croped', using 'cropped'
+const inputDir = path.join(baseDir, '..', 'src', 'assets');
+const outputDir = path.join(baseDir, '..', 'cropped'); // User asked for 'croped', using 'cropped'
 // --- End Configuration ---
 
 async function processImages() {
