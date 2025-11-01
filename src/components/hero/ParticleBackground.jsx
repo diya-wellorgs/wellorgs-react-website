@@ -4,11 +4,10 @@ const ParticleBackground = () => {
   const canvasRef = useRef(null);
   const animationFrameId = useRef(null);
   const particles = useRef([]);
-  const particleCount = 200; // Optimized particle count
-  const maxRadius = 1.5;
-  const minRadius = 0.5;
-  const maxVelocity = 0.2;
-  const minVelocity = 0.05;
+  const particleCount = 500; // Optimized particle count
+  const maxRadius = 0.5;
+  const minRadius = 0.2;
+  const maxVelocity = 0.4;
 
   const createParticle = (canvas) => {
     const radius = Math.random() * (maxRadius - minRadius) + minRadius;
@@ -18,7 +17,8 @@ const ParticleBackground = () => {
       radius: radius,
       vx: (Math.random() - 0.5) * maxVelocity, // velocity x
       vy: (Math.random() - 0.5) * maxVelocity, // velocity y
-      alpha: Math.random() * 0.7 + 0.3, // opacity
+      // alpha: Math.random() * 0.3 + 0.5, // opacity
+      alpha: 1,
     };
   };
 
@@ -50,8 +50,8 @@ const ParticleBackground = () => {
     const ctx = canvas.getContext('2d');
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = 'black';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    // ctx.fillStyle = 'black';
+    // ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     particles.current.forEach((particle) => {
       updateParticle(particle, canvas);
@@ -64,11 +64,10 @@ const ParticleBackground = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const ctx = canvas.getContext('2d');
 
     const setCanvasSize = () => {
       canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.height = 700;
       // Re-initialize particles on resize to distribute them correctly
       particles.current = Array.from({ length: particleCount }, () =>
         createParticle(canvas),
@@ -94,7 +93,7 @@ const ParticleBackground = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 z-0"
+      className="absolute w-full top-0 left-0 right-0 h-[140vh] z-60"
       style={{ pointerEvents: 'none' }}
     />
   );

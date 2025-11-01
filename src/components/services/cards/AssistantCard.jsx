@@ -41,8 +41,8 @@ export default function AssistantCard() {
         </div>
         <p className=" mb-3">What can I help with?</p>
 
-        <div className="border border-white/10 flex gap-2.5 flex-col  rounded-sm w-full p-2.5 mb-3">
-          <div className="flex justify-between bg-bg-primary ">
+        <div className="border border-white/10 flex gap-2.5 flex-col items-start  rounded-sm w-full p-2.5 mb-3">
+          <div className="px-1 w-full items-center flex justify-between bg-bg-primary ">
             <p className="text-12">Images of Microgreen</p>
             <ArrowRight
               size={14}

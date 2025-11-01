@@ -59,7 +59,16 @@
     ;
 }
 
-.bg-gradient-primary {
+.hero-bg-gradient {
+    background: linear-gradient(to top, rgba(54, 124, 255, 1)0%, rgba(54, 124, 255, 1) 50%,
+            rgba(0, 0, 0, 0) 100%);
+}
+
+.contact-bg-gradient {
+    background: radial-gradient(50% 75% at 98.9% 100%, rgba(0, 48, 96, 1) 0%, rgba(13, 13, 13, 0.8) 100%);
+}
+
+.bg-gradient-benefit {
     background: radial-gradient(50% 50% at 50% 100%, rgba(0, 48, 96, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
 }
 

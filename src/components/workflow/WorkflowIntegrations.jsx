@@ -157,7 +157,7 @@ export default function WorkflowIntegrations() {
           {/* Right Column (moves downward) */}
           <motion.div
             className="flex flex-col gap-6"
-            animate={{ y: ['-100%', '0%'] }}
+            animate={{ y: ['-90%', '0%'] }}
             transition={{
               duration: 80,
               ease: 'linear',

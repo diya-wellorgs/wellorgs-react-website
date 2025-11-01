@@ -49,7 +49,8 @@ export default function ServicesSection() {
   return (
     <div className="bg-black text-white px-6 md:px-16 lg:px-28 py-28">
       <div className="text-center mb-24">
-        <Chip />
+        <Chip text="Our Services" />
+
         <GradientText
           title="AI Solutions That Take Your Business to the Next  Level"
           subheading=" We design, develop, and implement automation tools that help you work

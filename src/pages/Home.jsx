@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+
 import { Spline } from 'lucide-react';
 
 import BenefitsSection from '../components/BenefitsSection';
@@ -5,6 +7,7 @@ import CallBanner from '../components/CallBanner';
 import FaqSection from '../components/faq/FaqSection';
 import Footer from '../components/footer/Footer';
 import { SplineSceneBasic } from '../components/hero/Hero';
+import ParticleBackground from '../components/hero/ParticleBackground';
 import ProcessSection from '../components/process/ProcessSection';
 import ServicesSection from '../components/services/ServicesSection';
 import StatisticsSection from '../components/StatisticsSection';
@@ -14,12 +17,24 @@ import GradientText from '../components/ui/GradientText';
 import WorkflowIntegrations from '../components/workflow/WorkflowIntegrations';
 
 function Home() {
+  const servicesRef = useRef(null);
+
+  const handleScrollToServices = () => {
+    servicesRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <div className="pt-40">
-      <SplineSceneBasic />
+    <div className="">
+      <SplineSceneBasic onChipClick={handleScrollToServices} />
+
       <TrustedBrands />
+
       <StatisticsSection />
-      <ServicesSection />
+      <div ref={servicesRef}>
+        <div ref={servicesRef}>
+          <ServicesSection />
+        </div>
+      </div>
       <WorkflowIntegrations />
       <ProcessSection />
       <BenefitsSection />
@@ -27,7 +42,6 @@ function Home() {
       <div className="min-h-screen bg-black text-white">
         <FaqSection />
         <CallBanner />
-        <Footer />
       </div>
     </div>
   );

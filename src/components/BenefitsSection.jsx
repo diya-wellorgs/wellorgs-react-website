@@ -75,7 +75,7 @@ export default function BenefitsSection() {
           {benefitsData.map((benefit, index) => (
             <div
               key={index}
-              className="bg-gradient-primary border border-neutral-800 rounded-md p-6 text-left hover:shadow-[0_0_20px_rgba(255,255,255,0.05)] transition-all duration-300"
+              className="bg-gradient-benefit border border-neutral-800 rounded-md p-6 text-left hover:shadow-[0_0_20px_rgba(255,255,255,0.05)] transition-all duration-300"
             >
               <div className="mb-3">{benefit.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
