@@ -9,7 +9,7 @@ import linkedIn from '../assets/linkedIn.png';
 import llu from '../assets/llu.png';
 import medhoco from '../assets/medhoco.png';
 import movingMiles from '../assets/movingMiles.png';
-import neyuAI from '../assets/neyuAI.png';
+import neyuAI from '../assets/neyuAi.png';
 import omg from '../assets/omg.png';
 import punjabGovtLogo from '../assets/punjabGov.png';
 import raya from '../assets/raya.png';

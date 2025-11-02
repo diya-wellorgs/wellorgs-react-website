@@ -68,6 +68,15 @@
     background: radial-gradient(50% 75% at 98.9% 100%, rgba(0, 48, 96, 1) 0%, rgba(13, 13, 13, 0.8) 100%);
 }
 
+.whoweare-bg-gradient {
+    background: radial-gradient(50% 75% at 98.9% 100%, var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(0, 48, 96)) 0%, var(--token-b2fb23d9-6070-4f2d-b3d0-2fe68c4f2aab, rgba(13, 13, 13, 0.8)) 100%);
+    ;
+}
+
+.values-bg-gradient {
+    background: radial-gradient(50% 50% at 50% 50%, var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, #003060) 0%, rgba(0, 114, 156, 0) 100%);
+}
+
 .bg-gradient-benefit {
     background: radial-gradient(50% 50% at 50% 100%, rgba(0, 48, 96, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
 }

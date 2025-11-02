@@ -19,10 +19,7 @@ function App() {
   const [showCookieSettings, setShowCookieSettings] = useState(true);
   return (
     <BrowserRouter>
-      <div className="relative max-w-screen">
-        <Navbar />
-        <ParticleBackground />
-      </div>
+      <Navbar />
 
       <div className="min-h-screen">
         <Suspense fallback={<div>Loading...</div>}>

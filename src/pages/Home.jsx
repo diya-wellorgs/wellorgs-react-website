@@ -8,6 +8,7 @@ import FaqSection from '../components/faq/FaqSection';
 import Footer from '../components/footer/Footer';
 import { SplineSceneBasic } from '../components/hero/Hero';
 import ParticleBackground from '../components/hero/ParticleBackground';
+import Navbar from '../components/Navbar';
 import ProcessSection from '../components/process/ProcessSection';
 import ServicesSection from '../components/services/ServicesSection';
 import StatisticsSection from '../components/StatisticsSection';
@@ -25,6 +26,10 @@ function Home() {
 
   return (
     <div className="">
+      <div className="relative max-w-screen">
+        <Navbar />
+        <ParticleBackground />
+      </div>
       <SplineSceneBasic onChipClick={handleScrollToServices} />
 
       <TrustedBrands />

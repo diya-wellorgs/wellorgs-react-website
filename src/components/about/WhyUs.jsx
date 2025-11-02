@@ -45,7 +45,7 @@ const WhyUs = () => {
         {/* Our Solution Card */}
         <div className="footer-bg-gradient border border-neutral-800 rounded-md p-8 shadow-inner">
           <h3 className="text-xl font-semibold mb-6">Our Solution</h3>
-          <ul className="space-y-3 text-neutral-300">
+          <ul className="space-y-1 text-neutral-300">
             {[
               'Smart, AI-Driven Decisions',
               '24/7 Automated Workflows',

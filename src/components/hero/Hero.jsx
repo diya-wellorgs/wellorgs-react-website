@@ -117,7 +117,7 @@ export function SplineSceneBasic({ onChipClick }) {
         <div className=" absolute top-[40%] left-1/2 -translate-x-1/2 right-0 w-[60vw] z-10">
           {/* <SplineScene scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode" /> */}
         </div>
-        {/* <div className="hero-bg-gradient z-20 bottom-0 left-0 right-0 absolute h-30 w-full "></div> */}
+
         <div className="absolute translate-y-1/2 -bottom-6 left-0 right-0 w-full">
           <GradientGlow />
         </div>
