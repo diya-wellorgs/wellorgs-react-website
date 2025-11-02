@@ -6,7 +6,7 @@ import GradientText from '../ui/GradientText';
 
 const WhyUs = () => {
   return (
-    <section className=" text-white py-24 flex flex-col items-center justify-center">
+    <section className=" text-white py-25 flex flex-col items-center justify-center">
       {/* Section Button */}
       <div className="w-full flex flex-col items-center justify-center gap-7">
         <Chip text=" Why us" />
@@ -18,9 +18,9 @@ const WhyUs = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl w-full px-6">
+      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-5 max-w-[850px] w-full ">
         {/* Manual Work Card */}
-        <div className="border border-neutral-800 rounded-md p-8 shadow-inner">
+        <div className="border border-neutral-800 rounded-md py-5 px-7.5  shadow-inner">
           <h3 className="text-xl font-semibold mb-6">Manual Work</h3>
           <ul className="space-y-1 text-neutral-300">
             {[
@@ -35,7 +35,7 @@ const WhyUs = () => {
                 key={i}
                 className="flex items-start gap-3"
               >
-                <span className="text-gray-300 text-lg">✕</span>
+                <span className="text-gray-300 ">✕</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -43,7 +43,7 @@ const WhyUs = () => {
         </div>
 
         {/* Our Solution Card */}
-        <div className="footer-bg-gradient border border-neutral-800 rounded-md p-8 shadow-inner">
+        <div className="footer-bg-gradient border border-neutral-800 rounded-md py-5 px-7.5 shadow-inner">
           <h3 className="text-xl font-semibold mb-6">Our Solution</h3>
           <ul className="space-y-1 text-neutral-300">
             {[
@@ -58,7 +58,7 @@ const WhyUs = () => {
                 key={i}
                 className="flex items-start gap-3"
               >
-                <CheckMarkIcon />
+                <CheckMarkIcon className="w-4.5 h-5" />
                 <span>{item}</span>
               </li>
             ))}

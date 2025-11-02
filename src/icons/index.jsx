@@ -297,8 +297,7 @@ export const CheckMarkIcon = (props) => (
     color="var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))"
     style={{
       userSelect: 'none',
-      width: '6%',
-      height: '6%',
+
       display: 'inline-block',
       fill: 'var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))',
       color:

@@ -33,7 +33,7 @@ const faqData = [
 
 const FaqSection = () => {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center bg-black px-6 py-20 text-white">
+    <section className="min-h-screen flex flex-col gap-15 items-center justify-center bg-black px-6 py-20 text-white">
       <div className=" w-full flex flex-col items-center justify-center gap-15 px-6 text-center mx-auto">
         {/* Section Badge */}
         <div className="w-full flex flex-col items-center justify-center gap-7">
@@ -44,17 +44,17 @@ const FaqSection = () => {
             subheading="Quick answers to your AI automation questions."
           />
         </div>
+      </div>
 
-        <div className="relative max-w-3xl w-full">
-          <BlueWave className="w-full h-auto absolute bottom-0 left-0 blur-[50px] opacity-30 z-10" />
-          <div className="flex flex-col gap-4 z-20 relative">
-            {faqData.map((faq, idx) => (
-              <FaqItem
-                key={idx}
-                {...faq}
-              />
-            ))}
-          </div>
+      <div className="relative max-w-3xl w-full">
+        <BlueWave className="w-full h-auto absolute bottom-0 left-0 blur-[50px] opacity-30 z-10" />
+        <div className="flex flex-col gap-4 z-20 relative">
+          {faqData.map((faq, idx) => (
+            <FaqItem
+              key={idx}
+              {...faq}
+            />
+          ))}
         </div>
       </div>
     </section>

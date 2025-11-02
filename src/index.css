@@ -101,6 +101,10 @@
     background-image: linear-gradient(304deg, rgb(0, 66, 79) 10%, rgb(0, 193, 226) 30%, rgb(254, 190, 49) 50%, rgb(183, 48, 255) 70%, rgb(255, 0, 0) 97%);
 }
 
+.legal-text-gradient {
+    background: (304deg, rgb(0, 66, 79) 10%, rgb(0, 193, 226) 30%, rgb(254, 190, 49) 50%, rgb(183, 48, 255) 70%, rgb(255, 0, 0) 97%);
+}
+
 body {
     background: var(--color-primary);
     color: var(--color-secondary)

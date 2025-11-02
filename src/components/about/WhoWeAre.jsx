@@ -33,7 +33,7 @@ const WhoWeAreData = [
 
 const WhoWeAre = () => {
   return (
-    <div className="max-w-4xl w-full flex flex-col items-center justify-center gap-15 pb-20 text-center mx-auto ">
+    <div className="max-w-4xl w-full flex flex-col items-center justify-center gap-15 py-[100px] text-center mx-auto ">
       <div className="w-full flex flex-col items-center justify-center gap-7">
         <Chip text=" Who We Are" />
         {/* Gradient Heading & subheading*/}

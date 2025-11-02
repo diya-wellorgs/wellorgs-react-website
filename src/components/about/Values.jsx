@@ -4,9 +4,9 @@ import {
   PiRocketLaunchFill,
 } from 'react-icons/pi';
 
-import Chip from '../components/ui/Chip';
-import GradientText from '../components/ui/GradientText';
-import { CustomersIcon } from '../icons';
+import { CustomersIcon } from '../../icons';
+import Chip from '../ui/Chip';
+import GradientText from '../ui/GradientText';
 
 const valuesData = [
   {
@@ -39,7 +39,7 @@ const valuesData = [
 
 const Values = () => {
   return (
-    <div className="max-w-6xl w-full flex flex-col items-center justify-center gap-15 px-6 text-center mx-auto  ">
+    <div className="max-w-7xl w-full flex flex-col items-center justify-center gap-15 px-6  py-[100px] text-center mx-auto  ">
       <div className="w-full flex flex-col items-center justify-center gap-7">
         <Chip text=" our values" />
         {/* Gradient Heading & subheading*/}

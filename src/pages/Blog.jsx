@@ -1,9 +1,7 @@
+import BlogSection from '../components/blog/BlogSection';
+
 function Blog() {
-  return (
-    <div>
-      <h1>Blog</h1>
-    </div>
-  );
+  return <BlogSection />;
 }
 
 export default Blog;

@@ -9,6 +9,9 @@ import Footer from './components/footer/Footer';
 import ParticleBackground from './components/hero/ParticleBackground';
 // import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import Legal from './pages/Legal';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
@@ -40,6 +43,19 @@ function App() {
             <Route
               path="/contact"
               element={<Contact />}
+            />
+
+            <Route
+              path="/terms"
+              element={<Terms />}
+            />
+            <Route
+              path="/privacy"
+              element={<Privacy />}
+            />
+            <Route
+              path="/legal"
+              element={<Legal />}
             />
 
             {/* <Route
