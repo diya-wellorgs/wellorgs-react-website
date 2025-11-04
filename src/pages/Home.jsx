@@ -2,6 +2,9 @@ import { useRef } from 'react';
 
 import { Spline } from 'lucide-react';
 
+import ChatBox from '../components/ai-chatbox/ChatBox';
+import ChatToggleButton from '../components/ai-chatbox/ChatToggleButton';
+import TermsModal from '../components/ai-chatbox/TermsModal';
 import BenefitsSection from '../components/BenefitsSection';
 import CallBanner from '../components/CallBanner';
 import FaqSection from '../components/faq/FaqSection';
@@ -16,6 +19,7 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import TrustedBrands from '../components/TrustedBrands';
 import GradientText from '../components/ui/GradientText';
 import WorkflowIntegrations from '../components/workflow/WorkflowIntegrations';
+import { useChatLogic } from '../hooks/useChatLogic';
 
 function Home() {
   const servicesRef = useRef(null);
@@ -24,8 +28,47 @@ function Home() {
     servicesRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const {
+    messages,
+    isChatOpen,
+    showTerms,
+    accepted,
+    handleUserMessage,
+    openChat,
+    acceptTerms,
+    onCancel,
+    toggleChat,
+  } = useChatLogic();
+
   return (
     <div className="">
+      <div className=" ">
+        {/* Floating Chat Button/ dropdown */}
+        <ChatToggleButton
+          isChatOpen={isChatOpen}
+          openChat={openChat}
+          toggleChat={toggleChat}
+        />
+
+        {/* Terms & Conditions Popup */}
+        {showTerms && (
+          <div className="absolute left-6 bottom-20">
+            <TermsModal
+              onAccept={acceptTerms}
+              onCancel={onCancel}
+            />
+          </div>
+        )}
+
+        {/* Chat Box */}
+        {isChatOpen && (
+          <ChatBox
+            messages={messages}
+            onSend={handleUserMessage}
+          />
+        )}
+      </div>
+
       <div className="relative max-w-screen">
         <Navbar />
         <ParticleBackground />
