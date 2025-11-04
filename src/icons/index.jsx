@@ -330,3 +330,252 @@ export const CustomersIcon = (props) => (
     <path d="M164.47 195.63a8 8 0 0 1-6.7 12.37H10.23a8 8 0 0 1-6.7-12.37 95.83 95.83 0 0 1 47.22-37.71 60 60 0 1 1 66.5 0 95.83 95.83 0 0 1 47.22 37.71Zm87.91-.15a95.87 95.87 0 0 0-47.13-37.56A60 60 0 0 0 144.7 54.59a4 4 0 0 0-1.33 6 75.83 75.83 0 0 1 3.63 89.94 4 4 0 0 0 1.07 5.53 112.32 112.32 0 0 1 29.85 30.83 23.92 23.92 0 0 1 3.65 16.47 4 4 0 0 0 3.95 4.64h60.3a8 8 0 0 0 7.73-5.93 8.22 8.22 0 0 0-1.17-6.59Z" />
   </svg>
 );
+
+//services.jsx
+//project lifecycle
+export const DevelopmentIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    color="var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))"
+    style={{
+      userSelect: 'none',
+
+      display: 'inline-block',
+      fill: 'var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))',
+      color:
+        'var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))',
+      flexShrink: 0,
+    }}
+    viewBox="0 0 256 256"
+    {...props}
+  >
+    <path d="M168 128a8 8 0 0 1-8 8H96a8 8 0 0 1 0-16h64a8 8 0 0 1 8 8Zm-8 24H96a8 8 0 0 0 0 16h64a8 8 0 0 0 0-16Zm56-112v160a32 32 0 0 1-32 32H72a32 32 0 0 1-32-32V40a8 8 0 0 1 8-8h24v-8a8 8 0 0 1 16 0v8h32v-8a8 8 0 0 1 16 0v8h32v-8a8 8 0 0 1 16 0v8h24a8 8 0 0 1 8 8Zm-16 8h-16v8a8 8 0 0 1-16 0v-8h-32v8a8 8 0 0 1-16 0v-8H88v8a8 8 0 0 1-16 0v-8H56v152a16 16 0 0 0 16 16h112a16 16 0 0 0 16-16Z" />
+  </svg>
+);
+
+export const QaTestingIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    color="var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))"
+    style={{
+      userSelect: 'none',
+
+      display: 'inline-block',
+      fill: 'var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))',
+      color:
+        'var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))',
+      flexShrink: 0,
+    }}
+    viewBox="0 0 256 256"
+    {...props}
+  >
+    <path d="M224 128a8 8 0 0 1-8 8H40a8 8 0 0 1 0-16h176a8 8 0 0 1 8 8ZM40 72h176a8 8 0 0 0 0-16H40a8 8 0 0 0 0 16Zm176 112H40a8 8 0 0 0 0 16h176a8 8 0 0 0 0-16Z" />
+  </svg>
+);
+
+export const BugFixingIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    color="var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))"
+    style={{
+      userSelect: 'none',
+
+      display: 'inline-block',
+      fill: 'var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))',
+      color:
+        'var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))',
+      flexShrink: 0,
+    }}
+    viewBox="0 0 256 256"
+    {...props}
+  >
+    <path d="M128 40a96 96 0 1 0 96 96 96.11 96.11 0 0 0-96-96Zm0 176a80 80 0 1 1 80-80 80.09 80.09 0 0 1-80 80ZM61.66 37.66l-32 32a8 8 0 0 1-11.32-11.32l32-32a8 8 0 0 1 11.32 11.32Zm176 32a8 8 0 0 1-11.32 0l-32-32a8 8 0 0 1 11.32-11.32l32 32a8 8 0 0 1 0 11.32ZM184 128a8 8 0 0 1 0 16h-56a8 8 0 0 1-8-8V80a8 8 0 0 1 16 0v48Z" />
+  </svg>
+);
+
+export const ContractSignedIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    color="var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))"
+    style={{
+      userSelect: 'none',
+
+      display: 'inline-block',
+      fill: 'var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))',
+      color:
+        'var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))',
+      flexShrink: 0,
+    }}
+    viewBox="0 0 256 256"
+    {...props}
+  >
+    <path d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88 88.1 88.1 0 0 1-88 88Zm40-68a28 28 0 0 1-28 28h-4v8a8 8 0 0 1-16 0v-8h-16a8 8 0 0 1 0-16h36a12 12 0 0 0 0-24h-24a28 28 0 0 1 0-56h4v-8a8 8 0 0 1 16 0v8h16a8 8 0 0 1 0 16h-36a12 12 0 0 0 0 24h24a28 28 0 0 1 28 28Z" />
+  </svg>
+);
+
+export const TeamOnBoardingIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    color="var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))"
+    style={{
+      userSelect: 'none',
+
+      display: 'inline-block',
+      fill: 'var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))',
+      color:
+        'var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))',
+      flexShrink: 0,
+    }}
+    viewBox="0 0 256 256"
+    {...props}
+  >
+    <path d="M117.25 157.92a60 60 0 1 0-66.5 0 95.83 95.83 0 0 0-47.22 37.71 8 8 0 1 0 13.4 8.74 80 80 0 0 1 134.14 0 8 8 0 0 0 13.4-8.74 95.83 95.83 0 0 0-47.22-37.71ZM40 108a44 44 0 1 1 44 44 44.05 44.05 0 0 1-44-44Zm210.14 98.7a8 8 0 0 1-11.07-2.33A79.83 79.83 0 0 0 172 168a8 8 0 0 1 0-16 44 44 0 1 0-16.34-84.87 8 8 0 1 1-5.94-14.85 60 60 0 0 1 55.53 105.64 95.83 95.83 0 0 1 47.22 37.71 8 8 0 0 1-2.33 11.07Z" />
+  </svg>
+);
+
+//sales card
+export const SliderIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    color="var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75))"
+    style={{
+      userSelect: 'none',
+
+      display: 'inline-block',
+      fill: 'var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75))',
+      color:
+        'var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75))',
+      flexShrink: 0,
+    }}
+    viewBox="0 0 256 256"
+    {...props}
+  >
+    <path d="M32 80a8 8 0 0 1 8-8h37.17a28 28 0 0 1 53.66 0H216a8 8 0 0 1 0 16h-85.17a28 28 0 0 1-53.66 0H40a8 8 0 0 1-8-8Zm184 88h-21.17a28 28 0 0 0-53.66 0H40a8 8 0 0 0 0 16h101.17a28 28 0 0 0 53.66 0H216a8 8 0 0 0 0-16Z" />
+  </svg>
+);
+
+export const BotIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={16}
+    height={16}
+    fill="none"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    aria-hidden="true"
+    className="lucide lucide-bot"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <path d="M12 8V4H8" />
+    <rect
+      width={16}
+      height={12}
+      x={4}
+      y={8}
+      rx={2}
+    />
+    <path d="M2 14h2M20 14h2M15 13v2M9 13v2" />
+  </svg>
+);
+export const CalenderIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    color="var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75))"
+    style={{
+      userSelect: 'none',
+
+      display: 'inline-block',
+      fill: 'var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75))',
+      color:
+        'var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75))',
+      flexShrink: 0,
+    }}
+    viewBox="0 0 256 256"
+    {...props}
+  >
+    <path d="M208 32h-24v-8a8 8 0 0 0-16 0v8H88v-8a8 8 0 0 0-16 0v8H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16ZM84 184a12 12 0 1 1 12-12 12 12 0 0 1-12 12Zm44 0a12 12 0 1 1 12-12 12 12 0 0 1-12 12Zm0-40a12 12 0 1 1 12-12 12 12 0 0 1-12 12Zm44 40a12 12 0 1 1 12-12 12 12 0 0 1-12 12Zm0-40a12 12 0 1 1 12-12 12 12 0 0 1-12 12Zm36-64H48V48h24v8a8 8 0 0 0 16 0v-8h80v8a8 8 0 0 0 16 0v-8h24Z" />
+  </svg>
+);
+export const SendIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    color="var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))"
+    style={{
+      userSelect: 'none',
+
+      display: 'inline-block',
+      fill: 'var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))',
+      color:
+        'var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))',
+      flexShrink: 0,
+    }}
+    viewBox="0 0 256 256"
+    {...props}
+  >
+    <path d="m231.87 114-168-95.89a16 16 0 0 0-22.95 19.23L71.55 128l-30.63 90.67A16 16 0 0 0 56 240a16.15 16.15 0 0 0 7.93-2.1l167.92-96.05a16 16 0 0 0 .05-27.89ZM56 224a.56.56 0 0 0 0-.12L85.74 136H144a8 8 0 0 0 0-16H85.74L56.06 32.16A.46.46 0 0 0 56 32l168 95.83Z" />
+  </svg>
+);
+export const AnalyzeIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    color="var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))"
+    style={{
+      userSelect: 'none',
+
+      display: 'inline-block',
+      fill: 'var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))',
+      color:
+        'var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))',
+      flexShrink: 0,
+    }}
+    viewBox="0 0 256 256"
+    {...props}
+  >
+    <path d="M232 208a8 8 0 0 1-8 8H32a8 8 0 0 1-8-8V48a8 8 0 0 1 16 0v94.37L90.73 98a8 8 0 0 1 10.07-.38l58.81 44.11L218.73 90a8 8 0 1 1 10.54 12l-64 56a8 8 0 0 1-10.07.38l-58.81-44.09L40 163.63V200h184a8 8 0 0 1 8 8Z" />
+  </svg>
+);
+
+export const ImageIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    color="var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))"
+    style={{
+      userSelect: 'none',
+      width: '100%',
+      height: '100%',
+      display: 'inline-block',
+      fill: 'var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))',
+      color:
+        'var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))',
+      flexShrink: 0,
+    }}
+    viewBox="0 0 256 256"
+    {...props}
+  >
+    <path d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16Zm0 16v102.75l-26.07-26.06a16 16 0 0 0-22.63 0l-20 20-44-44a16 16 0 0 0-22.62 0L40 149.37V56ZM40 172l52-52 80 80H40Zm176 28h-21.37l-36-36 20-20L216 181.38V200Zm-72-100a12 12 0 1 1 12 12 12 12 0 0 1-12-12Z" />
+  </svg>
+);
+
+export const ResearchIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    color="var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))"
+    style={{
+      userSelect: 'none',
+      width: '100%',
+      height: '100%',
+      display: 'inline-block',
+      fill: 'var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))',
+      color:
+        'var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))',
+      flexShrink: 0,
+    }}
+    viewBox="0 0 256 256"
+    {...props}
+  >
+    <path d="m213.66 82.34-56-56A8 8 0 0 0 152 24H56a16 16 0 0 0-16 16v176a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16V88a8 8 0 0 0-2.34-5.66ZM160 51.31 188.69 80H160ZM200 216H56V40h88v48a8 8 0 0 0 8 8h48v120Zm-45.54-48.85a36.05 36.05 0 1 0-11.31 11.31l11.19 11.2a8 8 0 0 0 11.32-11.32ZM104 148a20 20 0 1 1 20 20 20 20 0 0 1-20-20Z" />
+  </svg>
+);

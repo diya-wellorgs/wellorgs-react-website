@@ -1,13 +1,8 @@
-export default function GradientText({
-  title,
-  subheading,
-  policies = false,
-  legal = false,
-}) {
+export default function GradientText({ title, subheading, policies = false }) {
   return (
     <div>
       <h2
-        className={`text-[38px] md:text-[74px] font-instrument font-semibold leading-[1.1em] text-center text-gradient text-transparent pb-3 bg-clip-text ${legal ? 'legal-text-gradient' : ''}`}
+        className={`text-[38px] md:text-[74px] font-instrument font-semibold leading-[1.1em] text-center text-gradient text-transparent pb-3 bg-clip-text `}
       >
         {title}
       </h2>

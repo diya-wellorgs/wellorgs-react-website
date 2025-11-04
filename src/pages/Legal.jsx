@@ -62,7 +62,6 @@ export default function Legal() {
       subtitle="Our Legal Policy defines the rights, responsibilities, and restrictions for using our software and name. Protecting our work and your trust is non-negotiable."
       sections={sections}
       contactEmail="legal@wellorgs.com"
-      legal={true}
     />
   );
 }

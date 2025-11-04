@@ -47,8 +47,8 @@ export default function ServicesSection() {
   ];
 
   return (
-    <div className="bg-black text-white px-6 md:px-16 lg:px-28 py-28">
-      <div className="text-center mb-24">
+    <div className=" w-full flex flex-col  gap-20 px-6  py-[100px]  mx-auto ">
+      <div className="w-full flex flex-col items-center justify-center gap-10">
         <Chip text="Our Services" />
 
         <GradientText

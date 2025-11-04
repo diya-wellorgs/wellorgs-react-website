@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import Chip from '../components/ui/Chip';
 import GradientText from '../components/ui/GradientText';
+import { Input } from '../components/ui/Input';
 import { MailIcon } from '../icons';
 
 export default function Contact() {
@@ -61,73 +62,67 @@ export default function Contact() {
           >
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div>
-                <label className="block text-sm mb-3">First Name</label>
-                <input
+                <Input
                   type="text"
                   name="firstName"
                   placeholder="Jane"
                   value={formData.firstName}
                   onChange={handleChange}
-                  className="w-full  border border-neutral-800 rounded-sm px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  label="First Name"
                 />
               </div>
               <div>
-                <label className="block text-sm mb-3">Last Name</label>
-                <input
+                <Input
                   type="text"
                   name="lastName"
                   placeholder="Smith"
                   value={formData.lastName}
                   onChange={handleChange}
-                  className="w-full  border border-neutral-800 rounded-sm px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  label="Last Name"
                 />
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div>
-                <label className="block text-sm mb-3">Email</label>
-                <input
+                <Input
                   type="email"
                   name="email"
                   value={formData.email}
                   placeholder="jane.smith@example.com"
                   onChange={handleChange}
-                  className="w-full  border border-neutral-800 rounded-sm px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  label="Email"
                 />
               </div>
               <div>
-                <label className="block text-sm mb-3">Phone</label>
-                <input
+                <Input
                   type="text"
                   name="phone"
                   placeholder="123-456-7890"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full  border border-neutral-800 rounded-sm px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  label="Phone"
                 />
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div>
-                <label className="block text-sm mb-3">Company Name</label>
-                <input
+                <Input
                   type="text"
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full  border border-neutral-800 rounded-sm px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  label="Company Name"
                 />
               </div>
               <div>
-                <label className="block text-sm mb-3">Website URL</label>
-                <input
+                <Input
                   type="url"
                   name="website"
                   value={formData.website}
                   onChange={handleChange}
-                  className="w-full  border border-neutral-800 rounded-sm px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  label="Website URL"
                 />
               </div>
             </div>

@@ -15,7 +15,7 @@ export default function ServiceCard({
       } items-center justify-between  `}
     >
       <div className="max-w-[430px] w-full   ">
-        <div className="bg-[#0c0c0c]  pb-0 p-[50px] rounded-2xl  shadow-lg border border-white/5">
+        <div className="bg-[#0c0c0c]  pb-0 px-[45px] py-10 rounded-2xl  shadow-lg border border-white/5">
           {cardComponent}
         </div>
       </div>

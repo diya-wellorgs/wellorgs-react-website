@@ -9,7 +9,6 @@ export default function LegalPage({
   contactEmail,
   showContact = true,
   className,
-  legal = { legal },
 }) {
   return (
     <div
@@ -21,7 +20,6 @@ export default function LegalPage({
           title={title}
           subheading={subtitle}
           policies={true}
-          legal={legal}
         />
       </div>
 
