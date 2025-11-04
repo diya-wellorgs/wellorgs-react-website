@@ -9,6 +9,7 @@ import Footer from './components/footer/Footer';
 import ParticleBackground from './components/hero/ParticleBackground';
 // import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import Careers from './pages/Careers';
 import Legal from './pages/Legal';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
@@ -56,6 +57,10 @@ function App() {
             <Route
               path="/legal"
               element={<Legal />}
+            />
+            <Route
+              path="/careers"
+              element={<Careers />}
             />
 
             {/* <Route
