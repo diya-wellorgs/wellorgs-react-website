@@ -86,26 +86,29 @@ export default function TrustedBrands() {
       {/* Logos Slider */}
       <div className="relative max-w-screen pt-8 slider-mask overflow-hidden z-10">
         <motion.div
-          className="flex gap-14 w-fit items-center px-[170px]"
-          animate={{ x: '-190%' }}
+          className="flex gap-14 w-fit items-center
+          -translate-x-[]
+          "
+          // animate={{ x: '-165%' }}
           transition={{
             repeat: Infinity,
-            duration: 20,
+            duration: 5,
             delay: 1,
             ease: 'linear',
           }}
         >
           {brands.map((brand, index) => (
-            <BrandLogo
-              id={brand.id}
-              key={index}
-              logo={brand.logo}
-            />
+            <>
+              {/* {brand.id} */}
+              <BrandLogo
+                id={brand.id}
+                key={index}
+                logo={brand.logo}
+              />
+            </>
           ))}
+          <div className="absolute top-1/2 -translate-y-1/2 w-full h-8 bg-red-300/10 "></div>
         </motion.div>
-
-        {/* Fade edges
-        <div className="pointer-events-none absolute inset-0 bg-linear-to-r from-black via-transparent to-black"></div> */}
       </div>
     </section>
   );
