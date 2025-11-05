@@ -30,8 +30,8 @@ export function SplineSceneBasic({ onChipClick }) {
     >
       <div className="relative min-h-screen overflow-visible">
         {/* Left content */}
-        <div className="flex relative z-10 pt-20 max-w-4xl mx-auto  flex-col items-center  justify-center gap-5 ">
-          <div className="flex bg-[#0d0e13] border border-neutral-800 p-px rounded-full items-center justify-center">
+        <div className="flex relative pt-20 max-w-4xl mx-auto  flex-col items-center  justify-center gap-5 z-60 pointer-events-none">
+          <div className="flex bg-[#0d0e13] border border-neutral-800 p-px rounded-full items-center justify-center pointer-events-none">
             <p className="bg-tertiary rounded-xl px-3 text-12  py-0.5">New</p>
             <motion.p
               className="text-12 text-white whitespace-nowrap overflow-hidden"
@@ -46,13 +46,16 @@ export function SplineSceneBasic({ onChipClick }) {
               <span className="px-3">Welcome to Wellorgs AI</span>
             </motion.p>
           </div>
-          <h1 className="text-4xl md:text-[72px] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 text-center">
-            Intelligent Automation for Modern Businesses.
-          </h1>
-          <p className="text-[18px] font-medium text-neutral-300">
-            Wellorgs brings AI automation to your fingertips & streamline tasks.
-          </p>
-          <div className="flex gap-32 items-center justify-center pt-4">
+          <div className="*:pointer-events-none flex flex-col items-center justify-center gap-4 z-10">
+            <h1 className="text-4xl md:text-[72px] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 text-center">
+              Intelligent Automation for Modern Businesses.
+            </h1>
+            <p className="text-[18px] font-medium text-neutral-300">
+              Wellorgs brings AI automation to your fingertips & streamline
+              tasks.
+            </p>
+          </div>
+          <div className="flex gap-32 items-center justify-center pt-4 pointer-events-auto">
             <Button
               text="Get in touch"
               className="py-1"
