@@ -19,6 +19,7 @@ import synthesia from '../assets/synthesia.png';
 import toyHotel from '../assets/toyHotel.png';
 import BrandLogo from './BrandLogo';
 import ParticleBackground from './hero/ParticleBackground';
+import GradientGlow from './ui/GradientEffect';
 
 const brands = [
   // { id: 1, logo: brandLogo1, alt: 'Semaphore' },
@@ -72,6 +73,10 @@ const brands = [
 export default function TrustedBrands() {
   return (
     <section className="relative flex flex-col items-center text-center overflow-hidden bg-primary text-secondary py-20">
+      <div className="absolute -translate-y-1/2 top-6 left-0 right-0 w-full h-[80vh]">
+        <GradientGlow />
+        {/* </div> */}
+      </div>
       {/* Heading */}
 
       <h3 className="text-sm text-gray-300 z-10 ">

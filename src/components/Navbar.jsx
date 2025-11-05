@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+
 import { Link } from 'react-router-dom';
 
 import logo from '../assets/logo.avif';
@@ -15,7 +17,8 @@ const navLinks = [
 const Navbar = () => {
   return (
     <>
-      <nav className="w-full fixed top-0 z-50 nav-bg flex justify-center border-[#222222] px-10 py-3 pb-6">
+      <nav className="max-h-0 overflow-visible w-full fixed z-50 flex justify-center border-[#222222] px-10 top-10">
+        <div className="bg-red-100 absolute inset-0 w-full h-full py-10 -top-10 pointer-events-none nav-bg -z-10"></div>
         <div className="flex items-center justify-between w-full max-w-7xl">
           <Link
             to="/"
@@ -39,7 +42,10 @@ const Navbar = () => {
                 </ActiveLink>
               ))}
             </ul>
-            <Button text="Book a call" />
+            <Button
+              className="pointer-events-auto"
+              text="Book a call"
+            />
           </div>
         </div>
       </nav>

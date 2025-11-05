@@ -1,23 +1,20 @@
 import { useRef } from 'react';
 
-import { Spline } from 'lucide-react';
-
 import ChatBox from '../components/ai-chatbox/ChatBox';
 import ChatToggleButton from '../components/ai-chatbox/ChatToggleButton';
 import TermsModal from '../components/ai-chatbox/TermsModal';
 import BenefitsSection from '../components/BenefitsSection';
 import CallBanner from '../components/CallBanner';
 import FaqSection from '../components/faq/FaqSection';
-import Footer from '../components/footer/Footer';
 import { SplineSceneBasic } from '../components/hero/Hero';
 import ParticleBackground from '../components/hero/ParticleBackground';
 import Navbar from '../components/Navbar';
 import ProcessSection from '../components/process/ProcessSection';
 import ServicesSection from '../components/services/ServicesSection';
+import { SpotlightContainer } from '../components/SpotlightContainer';
 import StatisticsSection from '../components/StatisticsSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import TrustedBrands from '../components/TrustedBrands';
-import GradientText from '../components/ui/GradientText';
 import WorkflowIntegrations from '../components/workflow/WorkflowIntegrations';
 import { useChatLogic } from '../hooks/useChatLogic';
 
@@ -69,8 +66,9 @@ function Home() {
         )}
       </div>
 
-      <div className="relative max-w-screen">
+      <div className="relative max-w-screen overflow-x-clip">
         <Navbar />
+        <SpotlightContainer />
         <ParticleBackground />
       </div>
       <SplineSceneBasic onChipClick={handleScrollToServices} />
