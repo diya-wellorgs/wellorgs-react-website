@@ -1,3 +1,6 @@
+import Button from './ui/Button';
+import { NumberTicker } from './ui/NumberTicker';
+
 export default function StatisticsSection() {
   const stats = [
     { value: '15+', label: 'Awards.' },
@@ -6,19 +9,25 @@ export default function StatisticsSection() {
   ];
 
   return (
-    <div className="relative py-20 px-5  w-full">
-      <div className="absolute inset-0 bg-gradient "></div>
-
-      <div className="relative flex flex-wrap justify-center gap-40 text-[#808080] z-10">
+    <div className="relative py-20 px-5   w-full">
+      <div className="flex flex-wrap justify-start gap-40 text-[#808080] z-10">
         {stats.map((stat, index) => (
           <div
             key={index}
             className="flex flex-col items-center"
           >
-            <span className="text-[64px] font-bold">{stat.value}</span>
+            <NumberTicker
+              value={stat.value}
+              className="text-[64px] font-bold"
+            >
+              {stat.value}
+            </NumberTicker>
             <span className="text-[22px] font-bold ">{stat.label}</span>
           </div>
         ))}
+        <div>
+          <Button text="Book a free call" />
+        </div>
       </div>
     </div>
   );

@@ -40,8 +40,8 @@ export function SplineSceneBasic({ onChipClick }) {
 
       if (!spotlight) return;
 
-      const mouseX = clientX - spotlight.offsetWidth / 6;
-      const mouseY = clientY - spotlight.offsetHeight;
+      const mouseX = clientX;
+      const mouseY = clientY;
 
       x = mouseX;
       y = mouseY;
@@ -107,19 +107,25 @@ export function SplineSceneBasic({ onChipClick }) {
               onClick={() => navigate('/contact')}
             />
             <Chip
+              className="cursor-pointer hover:brightness-150"
               text="View services"
               onClick={onChipClick}
             />
           </div>
         </div>
 
+        {/* <div className="isolate"> */}
         {/* Right content */}
-        <div className=" absolute top-[40%] left-1/2 -translate-x-1/2 right-0 w-[60vw] z-10">
-          {/* <SplineScene scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode" /> */}
+        <div className=" absolute bottom-0 h-screen w-full left-1/2 -translate-x-1/2 z-50 overflow-hidden">
+          <SplineScene
+            scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+            // className="bg-red-400"
+          />
         </div>
 
-        <div className="absolute translate-y-1/2 -bottom-6 left-0 right-0 w-full">
+        <div className="absolute translate-y-1/2 -bottom-6 left-0 right-0 w-full h-[80%]">
           <GradientGlow />
+          {/* </div> */}
         </div>
       </div>
     </Card>
