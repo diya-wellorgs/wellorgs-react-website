@@ -77,9 +77,7 @@ function Home() {
 
       <StatisticsSection />
       <div ref={servicesRef}>
-        <div ref={servicesRef}>
-          <ServicesSection />
-        </div>
+        <ServicesSection />
       </div>
       <WorkflowIntegrations />
       <ProcessSection />

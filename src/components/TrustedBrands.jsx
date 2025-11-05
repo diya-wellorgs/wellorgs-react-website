@@ -84,7 +84,7 @@ export default function TrustedBrands() {
       </h3>
 
       {/* Logos Slider */}
-      <div className="relative w-full pt-8  max-w-4xl overflow-hidden z-10">
+      <div className="relative max-w-screen pt-8 slider-mask overflow-hidden z-10">
         <motion.div
           className="flex gap-14 w-fit items-center px-[170px]"
           animate={{ x: '-190%' }}
@@ -104,8 +104,8 @@ export default function TrustedBrands() {
           ))}
         </motion.div>
 
-        {/* Fade edges */}
-        <div className="pointer-events-none absolute inset-0 bg-linear-to-r from-black via-transparent to-black"></div>
+        {/* Fade edges
+        <div className="pointer-events-none absolute inset-0 bg-linear-to-r from-black via-transparent to-black"></div> */}
       </div>
     </section>
   );
