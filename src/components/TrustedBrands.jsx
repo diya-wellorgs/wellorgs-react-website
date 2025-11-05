@@ -72,9 +72,9 @@ const brands = [
 
 export default function TrustedBrands() {
   return (
-    <section className="relative flex flex-col items-center text-center overflow-hidden bg-primary text-secondary py-20">
+    <section className="relative flex flex-col items-center text-center overflow-hidden text-secondary py-20">
       <div className="absolute -translate-y-1/2 top-6 left-0 right-0 w-full h-[80vh]">
-        <GradientGlow />
+        <GradientGlow variant="secondary" />
         {/* </div> */}
       </div>
       {/* Heading */}

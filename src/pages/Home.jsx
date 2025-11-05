@@ -66,8 +66,8 @@ function Home() {
         )}
       </div>
 
-      <div className="relative max-w-screen overflow-x-clip">
-        <Navbar />
+      <div className="relative max-w-screen overflow-x-clip -z-10">
+        {/* <Navbar /> */}
         <SpotlightContainer />
         <ParticleBackground />
       </div>

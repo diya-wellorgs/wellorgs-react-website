@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -15,10 +15,25 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const [showBackground, setShowBackground] = useState(false);
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 1) {
+        setShowBackground(true);
+      } else {
+        setShowBackground(false);
+      }
+    });
+  }, []);
   return (
     <>
-      <nav className="max-h-0 overflow-visible w-full fixed z-50 flex justify-center border-[#222222] px-10 top-10">
-        <div className="bg-red-100 absolute inset-0 w-full h-full py-10 -top-10 pointer-events-none nav-bg -z-10"></div>
+      <nav className="max-h-0 overflow-visible w-full fixed z-50 flex justify-center px-10 top-10">
+        <div
+          style={{
+            opacity: showBackground ? 1 : 0,
+          }}
+          className="bg-red-100 absolute inset-0 w-full h-full py-10 -top-10 pointer-events-none nav-bg -z-10 transition-opacity will-change-opacity duration-100 pb-11"
+        ></div>
         <div className="flex items-center justify-between w-full max-w-7xl">
           <Link
             to="/"

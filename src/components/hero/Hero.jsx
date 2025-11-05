@@ -26,7 +26,7 @@ export function SplineSceneBasic({ onChipClick }) {
       // onMouseMove={handleMouseMove}
       // onMouseLeave={() => mouseStateHandler('mouseleave')}
       // onMouseEnter={() => mouseStateHandler('mouseenter')}
-      className="w-full bg-black/[0.96] relative overflow-hidden contain-paint"
+      className="w-full relative overflow-hidden contain-paint "
     >
       <div className="relative min-h-screen overflow-visible">
         {/* Left content */}
@@ -78,7 +78,7 @@ export function SplineSceneBasic({ onChipClick }) {
           />
         </div>
 
-        <div className="absolute translate-y-1/2 -bottom-6 left-0 right-0 w-full h-[80%]">
+        <div className="absolute translate-y-1/2 -bottom-6 left-0 right-0 w-full h-[80vh]">
           <GradientGlow />
           {/* </div> */}
         </div>

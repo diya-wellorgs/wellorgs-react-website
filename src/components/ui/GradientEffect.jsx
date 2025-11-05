@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-const GradientGlow = (props) => (
+const Secondary = 'secondary';
+const GradientGlow = ({ variant, ...props }) => (
   //   <svg
   //     style={{ height: '100%', width: '100%' }}
   //     height="100%"
@@ -10,7 +11,7 @@ const GradientGlow = (props) => (
   //   >
   <svg
     style={{
-      '--gradient-glow-blur': '34px',
+      '--gradient-glow-blur': '38px',
       height: '100%',
       width: '100%',
     }}
@@ -38,6 +39,7 @@ const GradientGlow = (props) => (
           d="m997.135 75.614 193.385 43.027-18.58 98.075H990.747l-405.358-55.049 411.746-86.053Z"
         />
       </g>
+      {/* {variant !== 'secondary' && ( */}
       <g
         filter="blur(var(--gradient-glow-blur))"
         style={{
@@ -52,6 +54,7 @@ const GradientGlow = (props) => (
           rx={143}
         />
       </g>
+      {/* )} */}
       <g
         filter="blur(var(--gradient-glow-blur))"
         style={{
